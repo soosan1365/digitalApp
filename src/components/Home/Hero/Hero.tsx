@@ -2,10 +2,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Autoplay from 'embla-carousel-autoplay'
-import AppleLogo from '@/assets/AppleLogo.png'
-import LenovoLogo from '@/assets/LenovoLogo.png'
-import SamsungLogo from '@/assets/SamsungLogo.png'
-import AsusLogo from '@/assets/AsusLogo.png'
+import AppleLogo from '@/../public/assets/AppleLogo.png'
+import LenovoLogo from '@/../public/assets/LenovoLogo.png'
+import SamsungLogo from '@/../public/assets/SamsungLogo.png'
+import AsusLogo from '@/../public/assets/AsusLogo.png'
 
 import { Card, CardContent } from '@/components/ui/card'
 import {
@@ -16,10 +16,10 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 
-import apple from '@/assets/Apple.png'
-import lenovo from '@/assets/lenovo.jpg'
-import sumsung from '@/assets/sumsung.jpg'
-import microsoft from '@/assets/microsoft.jpg'
+import apple from '@/../public/assets/Apple.png'
+import lenovo from '@/../public/assets/lenovo.jpg'
+import sumsung from '@/../public/assets/sumsung.jpg'
+import microsoft from '@/../public/assets/microsoft.jpg'
 
 const Hero = () => {
   const plugin = React.useRef(

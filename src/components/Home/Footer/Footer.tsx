@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import logo1 from "@/assets/logo1.png"
+import logo1 from "@/../public/assets/logo1.png"
 import Image from 'next/image'
 
 

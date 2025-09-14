@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ShoppingBasketIcon } from 'lucide-react'
-import logo1 from "@/assets/logo1.png"
+import logo1 from "@/../public/assets/logo1.png"
 import { Navlinks } from '@/constant/constant'
 import MobileNav from './MobileNav'
 import { useEffect, useState } from 'react'
