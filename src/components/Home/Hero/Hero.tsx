@@ -16,7 +16,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 
-import apple from '@/../public/assets/Apple.png'
+import apple from '@/../public/assets/apple.png'
 import lenovo from '@/../public/assets/lenovo.jpg'
 import sumsung from '@/../public/assets/sumsung.jpg'
 import microsoft from '@/../public/assets/microsoft.jpg'
