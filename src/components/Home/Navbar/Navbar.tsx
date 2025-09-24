@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
         {/* left */}
         <div className="flex items-center justify-center space-x-4    ">
-          <Button variant="link">
+          <Button variant="link" size="sm">
             sign in
           </Button>
           {/* dark&light menu */}

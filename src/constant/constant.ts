@@ -24,7 +24,7 @@ export const Navlinks:NavItem[] = [
   },
     {
     id: "2",
-    url: "#_",
+    url: "/store",
     label: "Store",
   },  {
     id: "3",

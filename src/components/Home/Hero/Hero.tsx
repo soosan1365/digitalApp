@@ -20,6 +20,7 @@ import apple from '@/../public/assets/apple.png'
 import lenovo from '@/../public/assets/lenovo.jpg'
 import sumsung from '@/../public/assets/sumsung.jpg'
 import microsoft from '@/../public/assets/microsoft.jpg'
+import Container from '../Helper/Container'
 
 const Hero = () => {
   const plugin = React.useRef(
@@ -29,9 +30,10 @@ const Hero = () => {
   return (
     <div className="relative w-full   flex flex-col justify-center  ">
       {/* rightCarousel  */}
+      <Container>
       <div
-        className="w-[60%] md:w-[80%] mx-auto  grid items-center justify-center grid-cols-1
-       lg:grid-cols-2  gap-10 "
+        className=" mx-auto  grid items-center justify-center grid-cols-1
+       md:grid-cols-2  gap-10 "
       >
         <div className="mx-auto sm:w-[90%]  md:w-98% ">
           <Carousel
@@ -71,7 +73,7 @@ const Hero = () => {
         >
           <h1
             className="bg-gradient-to-r   from-[#56ce78]  from-50% to-[#a9e0bb] text-transparent
-         bg-clip-text text-2xl  md:text-3xl  lg:text-4xl xl:text-7xl font-serif"
+         bg-clip-text text-2xl  md:text-4xl  lg:text-5xl xl:text-7xl font-serif"
           >
             Dijital
           </h1>
@@ -90,7 +92,7 @@ const Hero = () => {
               </span>
             </p>
           </div>
-          <div className=" w-[4vh] md:w-[20vh] flex  justify-center items-center gap-6 md:gap-10 ">
+          <div className=" w-[4vh]  md:w-[8vh] lg:w-[20vh] flex  justify-center items-center gap-6 md:gap-10 ">
             <Image src={AppleLogo} alt="apple"/>
             <Image src={SamsungLogo} alt="SamsungLogo" />
             <Image src={LenovoLogo} alt="LenovoLogo" />
@@ -98,6 +100,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      </Container>
     </div>
   )
 }
