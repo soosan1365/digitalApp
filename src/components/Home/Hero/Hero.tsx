@@ -28,17 +28,17 @@ const Hero = () => {
   )
 
   return (
-    <div className="relative w-full   flex flex-col justify-center  ">
+    <div className="relative    flex flex-col justify-center  ">
       {/* rightCarousel  */}
       <Container>
       <div
         className=" mx-auto  grid items-center justify-center grid-cols-1
-       md:grid-cols-2  gap-10 "
+       sm:grid-cols-2  gap-10 "
       >
-        <div className="mx-auto sm:w-[90%]  md:w-98% ">
+        <div className="mx-auto w-[70%] sm:w-[88%] md:w-[78%] ">
           <Carousel
             plugins={[plugin.current]}
-            className="w-full mt-20 lg:mt-28 "
+            className="w-full mt-20 lg:mt-24 "
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
           >
@@ -69,7 +69,7 @@ const Hero = () => {
         {/* leftcontent */}
         <div
           className="flex flex-col justify-between items-center  font-extrabold
-      leading-[2.5rem] md:leading-[4rem] md:mt-16 lg:mt-22 gap-2 sm:gap-5  lg:gap-9 "
+      leading-[2.5rem] md:leading-[4rem] sm:mt-22 gap-2 sm:gap-3  lg:gap-9 "
         >
           <h1
             className="bg-gradient-to-r   from-[#56ce78]  from-50% to-[#a9e0bb] text-transparent

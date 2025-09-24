@@ -8,6 +8,7 @@ import MobileNav from './MobileNav'
 import { useEffect, useState } from 'react'
 import ThemeToggler from '../Helper/ThemeToggler'
 import { Button } from '@/components/ui'
+import Container from '../Helper/Container'
 
 const Navbar = () => {
   const [navbg, setNavbg] = useState(false)
@@ -26,8 +27,9 @@ const Navbar = () => {
       className={` ${navbg ? 'bg-white dark:bg-gradient-to-b from-[#141b15] to-[#48534c] shadow-sm' : 'fixed'} fixed   top-0
    w-full  px-4   lg:px-16 z-50 transition-all `}
     >
+      <Container>
       <nav
-        className="flex justify-between items-center h-full w-[90%] xl:w-[80%] mt-2 mx-auto rounded-4xl 
+        className="flex justify-between items-center h-full  mt-2 mx-auto rounded-4xl 
       "
       >
         {/* right */}
@@ -56,11 +58,12 @@ const Navbar = () => {
           {/* dark&light menu */}
           <ThemeToggler />
           {/* cart icon */}
-          <ShoppingBasketIcon className='lg:w-9 lg:h-9'/>
+          <ShoppingBasketIcon className='lg:w-7 lg:h-7'/>
           {/* mobile nav */}
           <MobileNav />
         </div>
       </nav>
+      </Container>
     </div>
   )
 }

@@ -5,7 +5,7 @@ interface IcontainerProps{
 
 const Container = ({children}:IcontainerProps) => {
   return (
-    <div className='container mx-auto w-[85%]'>
+    <div className='container mx-auto '>
         {children}
     </div>
   )

@@ -16,13 +16,13 @@ const ThemeToggler = () => {
   return (
     <button
       onClick={() => setTheme(currentTheme === 'dark' ? 'light' : 'dark')}
-      className="p-2 transition-all w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-800 dark:bg-white
+      className="p-2 transition-all w-8 h-8 rounded-full bg-gray-800 dark:bg-white
      flex items-center justify-center flex-col "
     >
       {currentTheme === 'dark' ? (
-        <SunIcon className="text-yellow-500 w-7 h-7 cursor-pointer" />
+        <SunIcon className="text-yellow-500 w-6 h-6 cursor-pointer" />
       ) : (
-        <MoonIcon className="text-white w-7 h-7 cursor-pointer" />
+        <MoonIcon className="text-white w-6 h-6 cursor-pointer" />
       )}
     </button>
   )
