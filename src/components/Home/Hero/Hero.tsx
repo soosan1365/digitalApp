@@ -20,7 +20,7 @@ import apple from '@/../public/assets/apple.png'
 import lenovo from '@/../public/assets/lenovo.jpg'
 import sumsung from '@/../public/assets/sumsung.jpg'
 import microsoft from '@/../public/assets/microsoft.jpg'
-import Container from '../Helper/Container'
+import Container from '../../Helper/Container'
 
 const Hero = () => {
   const plugin = React.useRef(

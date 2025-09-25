@@ -1,7 +1,7 @@
 import React from 'react'
-import Title from '../Helper/Title'
+import Title from '../../Helper/Title'
 import { category } from '@/constant/constant'
-import Container from '../Helper/Container'
+import Container from '../../Helper/Container'
 
 const Category = () => {
   return (

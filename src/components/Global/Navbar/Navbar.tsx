@@ -6,9 +6,9 @@ import logo1 from "@/../public/assets/logo1.png"
 import { Navlinks } from '@/constant/constant'
 import MobileNav from './MobileNav'
 import { useEffect, useState } from 'react'
-import ThemeToggler from '../Helper/ThemeToggler'
+import ThemeToggler from '../../Helper/ThemeToggler'
 import { Button } from '@/components/ui'
-import Container from '../Helper/Container'
+import Container from '../../Helper/Container'
 
 const Navbar = () => {
   const [navbg, setNavbg] = useState(false)
@@ -46,7 +46,7 @@ const Navbar = () => {
               dark:hover:text-emerald-400
              transition-all duration-200"
             >
-              <p className="font-semibold lg:text-base ">{link.label}</p>
+              <p className=" lg:text-base ">{link.label}</p>
             </Link>
           ))}
         </div>

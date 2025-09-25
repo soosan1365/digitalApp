@@ -4,7 +4,7 @@ import star_icon from '@/../public/assets/star_icon.svg'
 import star_dull_icon from '@/../public/assets/star_dull_icon.svg'
 import { Button } from '@/components/ui'
 
-type PRODUCT = {
+export interface PRODUCT  {
   id: number
   name: string
   description: string

@@ -19,7 +19,7 @@ export interface CategoryItem {
 export const Navlinks:NavItem[] = [
   {
     id: "1",
-    url: "#_",
+    url: "/",
     label: "Home",
   },
     {
@@ -28,16 +28,11 @@ export const Navlinks:NavItem[] = [
     label: "Store",
   },  {
     id: "3",
-    url: "#_",
-    label: "Features",
+    url: "/aboutus",
+    label: "About Us",
   },  {
     id: "4",
-    url: "#_",
-    label: "Menu",
-  },
-  {
-    id: "5",
-    url: "#_",
+    url: "/contact",
     label: "Contact",
   },
   
@@ -64,6 +59,42 @@ export const Navlinks:NavItem[] = [
   }
  
  ]
+
+ export const bestsellers: Product[] = [
+  {
+    id: 1,
+    name: 'Apple Earphones',
+    description: 'Noise-cancellation, 40-hour battery',
+    rating: 4.5,
+    price: '$299.99',
+    imgSrc: "/assets/apple_earphone_image.png"
+  },
+  {
+    id: 2,
+    name:'Bose QuietComfort 45',
+    description:'Noise Cancellation, 24-hour battery',
+    rating:4.5,
+    price:'$329.99',
+    imgSrc:"/assets/bose_headphone_image.png"
+  },
+  {
+    id:3,
+    name:'Samsung Galaxy S23',
+    description: 'Fitness Tracking, AMOLED Display',
+    rating:4.5,
+    price:'$799.99',
+    imgSrc:'/assets/samsung_s23phone_image.png',
+  },
+  {
+    id: 4,
+    name:'Garmin Venu 2',
+    description:'Noise Cancellation, 24-hour battery',
+    rating:4.5,
+    price:'$349.99',
+    imgSrc:'/assets/venu_watch_image.png',
+  },
+ 
+]
 export const products: Product[] = [
   {
     id: 1,

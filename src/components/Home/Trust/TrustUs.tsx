@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Helper/Title'
+import Title from '../../Helper/Title'
 import Image from 'next/image'
 import original from "@/../public/assets/original.png"
 import price from "@/../public/assets/price.png"
