@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Global/Navbar/Navbar'
 import Provider from '@/components/HOC/Provider'
 import Footer from '@/components/Global/Footer/Footer'
+import { ShoppingCartProvider } from './context/shoppingCart'
 
 const font = Manrope({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -20,13 +21,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressContentEditableWarning>
+    <html lang="en" >
       <body className={`${font.className} antialiased `}>
+          <ShoppingCartProvider>
         <Provider>
+        
           <Navbar/>
           {children}
           {/* <Footer/> */}
         </Provider>
+         </ShoppingCartProvider>
       </body>
     </html>
   )

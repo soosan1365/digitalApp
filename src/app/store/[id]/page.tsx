@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui'
 import { PRODUCT } from '@/components/Helper/StoreCard'
-  
+  import AddToCart from '@/components/Helper/AddToCart'
 interface IPoductProps{
   params:Promise<{id:string}>
   searchParams:Promise<{}>
@@ -16,19 +16,24 @@ async  function Product( {params}:IPoductProps){
       const data =await result.json() as PRODUCT
   return (
     <Container>
-<div className='grid grid-cols-12 mt-32'>
+<div className=' mx-auto w-[95%] grid grid-cols-9 mt-32   justify-center '>
     {/* left */}
-    <div className='col-span-3 h-20 bg-green-200'>
-<Image src={data.imgSrc} width={200} height={200} alt={data.name}/>
+    <div className='col-span-2 bg-green-100   flex items-center
+    w-full justify-center rounded-3xl'>
+<Image src={data.imgSrc} width={300} height={300} alt={data.name}/>
     </div>
 {/* right */}
-<div className='col-span-9 h-20 bg-blue-200 p-4'>
-<h1>{data.name}</h1>
-<p>{data.description}</p>
-<p>price: <span >${data.price}</span></p>
-<Button   className='w-6 h-6' >+</Button>
-<span className='mx-4'>()</span>
-<Button  className='w-6 h-6'>-</Button>
+<div className='col-span-6  bg-blue-50 py-8  flex flex-col px-4 justify-center  gap-5 rounded-4xl 
+'>
+<h1 className='font-semibold'>{data.name}</h1>
+<p className='text-sm lg:text-base '>{data.description}</p>
+
+<div className='flex flex-col sm:flex-row  items-center md:gap-5 justify-center gap-2'>
+  <p className='text-sm'>price: <span>${data.price}</span></p>
+  <Button variant="link"  size="sm">Add to Cart</Button>
+<AddToCart id={id}/>
+</div>
+
 </div>
 </div>
     </Container>

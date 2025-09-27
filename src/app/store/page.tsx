@@ -10,10 +10,10 @@ import Link from 'next/link'
     const data =await result.json() as PRODUCT[]
     return (
         <Container>
-            <div>
+            <div className='mt-28'>
                 <Title title="َThe best sellers" />
             </div>
-            <div className=' mx-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-14 gap-7 '>
+            <div className=' mx-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 gap-7 '>
                 {data?.map((item,i) => (
                 <Link key={i}   href={`/store/${item.id}`}>
                 <StoreCard  {...item} />

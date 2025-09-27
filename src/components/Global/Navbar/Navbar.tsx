@@ -58,7 +58,9 @@ const Navbar = () => {
           {/* dark&light menu */}
           <ThemeToggler />
           {/* cart icon */}
+          <Link href="/cart">
           <ShoppingBasketIcon className='lg:w-7 lg:h-7'/>
+          </Link>
           {/* mobile nav */}
           <MobileNav />
         </div>
