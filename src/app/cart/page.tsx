@@ -56,7 +56,7 @@ function Cart() {
             <CartItem key={item.id} {...item} />
           ))}
         </div>
-        <div className="w-50%  mx-auto ml-10 mt-5  gap-3 flex flex-col justify-center items-start   ">
+        <div className="w-50%  mx-auto ml-10 mt-5  gap-4 flex flex-col justify-center items-start   ">
           <h3>
             Total price:
             <span>{useMinimalRegexFormat(totalPrice)}$</span>

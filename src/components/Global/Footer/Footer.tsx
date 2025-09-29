@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className=" w-full mt-7 mb-12 flex items-center">
+    <div className=" w-full mt-7 py-5 flex items-start justify-between bg-black/75 text-white">
       <div
         className="w-[90%]  flex flex-col sm:flex-row  justify-around items-center gap-4
         "
@@ -20,22 +20,22 @@ const Footer = () => {
           <Link href="/">
             <Image className="w-[6vw] min-w-24" src={logo1} alt="" />
           </Link>
-          <p className=" text-base md:text-lg lg:text-xl shoar text-black/80 dark:text-white font-bold ">
+          <p className=" text-base md:text-lg lg:text-xl shoar  font-bold ">
             Innovation in Your Hands
           </p>
         </div>
         <div className="flex justify-between items-start">
           {/* center */}
           <div>
-            <p className="text-sm md:text-base font-bold  text-gray-900 dark:text-white">
+            <p className="text-sm md:text-base font-bold  ">
               {' '}
               COMPANY
             </p>
-            <ul className="text-sm flex flex-col gap-1 text-gray-900 dark:text-white">
+            <ul className="text-sm flex flex-col gap-1">
               <li>
                 <a
                   href="#"
-                  className="text-gray-800 dark:text-white hover:text-blue-500"
+                  className=" hover:text-blue-500"
                 >
                   Home
                 </a>
@@ -43,7 +43,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-800 dark:text-white hover:text-blue-500"
+                  className=" hover:text-blue-500"
                 >
                   About us
                 </a>
@@ -51,7 +51,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-800 dark:text-white hover:text-blue-500"
+                  className=" hover:text-blue-500"
                 >
                   Delivery
                 </a>
@@ -59,7 +59,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-800 dark:text-white hover:text-blue-500"
+                  className=" hover:text-blue-500"
                 >
                   privacy policy
                 </a>
@@ -68,17 +68,17 @@ const Footer = () => {
           </div>
           {/* right */}
           <div className="ml-16">
-            <p className="text-sm md:text-base font-bold  text-gray-900 dark:text-white">
+            <p className="text-sm md:text-base font-bold ">
               GET IN TOUCH
             </p>
-            <ul className="flex flex-col gap-1 text-gray-800 dark:text-white text-sm">
+            <ul className="flex flex-col gap-1 text-sm">
               <li>09162003147</li>
               <li>soosan.adh@gmail.com</li>
             </ul>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <p className=" text-sm md:text-base font-bold  text-gray-900 dark:text-white">
+          <p className=" text-sm md:text-base font-bold  ">
             SOCIAL NETWORKS
           </p>
           <div className="flex sm:flex-col gap-5 sm:gap-1 justify-center items-start">

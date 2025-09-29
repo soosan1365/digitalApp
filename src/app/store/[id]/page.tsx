@@ -16,7 +16,7 @@ async  function Product( {params}:IPoductProps){
       const data =await result.json() as PRODUCT
   return (
     <Container>
-<div className=' mx-auto w-[95%] grid grid-cols-9 mt-32 bg-gray-50 shadow-2xs dark:bg-black dark:shadow-white  justify-center '>
+<div className=' mx-auto w-[95%] grid grid-cols-9 mt-32 bg-gray-50 shadow-2xs dark:bg-black/50 rounded-b-4xl dark:shadow-white  justify-center '>
     {/* left */}
     <div className='col-span-2  flex items-center
     w-full justify-center rounded-3xl'>
