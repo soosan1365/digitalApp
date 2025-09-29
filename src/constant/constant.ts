@@ -34,7 +34,11 @@ export const Navlinks:NavItem[] = [
     id: "4",
     url: "/contact",
     label: "Contact",
-  },
+  }, {
+    id: "5",
+    url: "/admin",
+    label: "Admin",
+  }
   
 
 ];
