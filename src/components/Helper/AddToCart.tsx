@@ -7,15 +7,19 @@ interface AddToCartProps{
   id:string
 }
 function AddToCart({id}:AddToCartProps) {
-    const {cartItems,handleIncrease,getProductqty}=useShoppingCartContext()
-    console.log(cartItems);
+    const {cartItems,handleIncrease,getProductqty,handleDecrease,handleRemove}=useShoppingCartContext()
+  
   return (
-    <div>
-          <div className="flex items-center ">
+    <div className=' flex justify-center items-center gap-5 dark:text-black'>
+          <div className="flex items-center  ">
               <Button  onClick={()=>handleIncrease(parseInt(id))} className="w-3 h-3">+</Button>
-              <span className="">{getProductqty(parseInt(id))}</span>
-              <Button className="w-3 h-3">-</Button>
+              <span className="px-1 dark:text-white ">{getProductqty(parseInt(id))}</span>
+              <Button onClick={()=>handleDecrease(parseInt(id))} className="w-3 h-3">-</Button>
             </div>
+            <div>
+              <Button  onClick={()=>handleRemove(parseInt(id))} variant="destructive"  size="sm" className='text-white'>Remove</Button>
+            </div>
+            
     </div>
   )
 }

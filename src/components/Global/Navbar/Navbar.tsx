@@ -9,10 +9,11 @@ import { useEffect, useState } from 'react'
 import ThemeToggler from '../../Helper/ThemeToggler'
 import { Button } from '@/components/ui'
 import Container from '../../Helper/Container'
+import { useShoppingCartContext } from '@/app/context/shoppingCart'
 
 const Navbar = () => {
   const [navbg, setNavbg] = useState(false)
-
+const {cartTotalQty}=useShoppingCartContext()
   useEffect(() => {
     const handler = () => {
       if (window.scrollY >= 90) setNavbg(true)
@@ -59,7 +60,11 @@ const Navbar = () => {
           <ThemeToggler />
           {/* cart icon */}
           <Link href="/cart">
-          <ShoppingBasketIcon className='lg:w-7 lg:h-7'/>
+          <div className='relative'>
+          <ShoppingBasketIcon className='  lg:w-7 lg:h-7'/>
+          <span className='absolute  px-1.5  text-center text-[11px]  text-white bg-green-700 rounded-full left-1 -top-2.5'>
+            {cartTotalQty}
+            </span></div>
           </Link>
           {/* mobile nav */}
           <MobileNav />

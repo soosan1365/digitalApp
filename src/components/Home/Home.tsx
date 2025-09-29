@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from './Hero/Hero'
-import Store from "./BestSellers/BestSellers"
+import BestSellers from "./BestSellers/BestSellers"
 import Category from './Category/Category'
 import TrustUs from './Trust/TrustUs'
 
@@ -9,7 +9,7 @@ const Home = () => {
     <div className='overflow-x-hidden '>
       <Hero/>
       <Category/>
-      <Store/>
+      <BestSellers/>
       <TrustUs/>
     </div>
   )

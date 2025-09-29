@@ -3,17 +3,18 @@ import React from 'react'
 import star_icon from '@/../public/assets/star_icon.svg'
 import star_dull_icon from '@/../public/assets/star_dull_icon.svg'
 import { Button } from '@/components/ui'
+import AddToCart from './AddToCart'
 
 export interface PRODUCT  {
   id: number
   name: string
   description: string
   rating: number
-  price: string
+  price: number
   imgSrc: string
 }
 
-const StoreCard = ({ name, rating, price, imgSrc }: PRODUCT) => {
+const StoreCard = ({ id,name, rating, price, imgSrc }: PRODUCT) => {
   return (
     <div className="relative flex flex-col justify-between items-center shadow-[#ece7e7] shadow-lg
      dark:shadow-white/35 bg-gray-50 dark:bg-gradient-to-b text-gray-800 from-[#cff7d8]
@@ -31,6 +32,7 @@ const StoreCard = ({ name, rating, price, imgSrc }: PRODUCT) => {
         </h1>
         <div className="flex items-center justify-between w-full py-5">
           <p className=" text-sm  font-bold">{price}</p>
+          {/* <AddToCart id={id}/> */}
           <Button
             variant="link" size="sm" className='text-sm'>
             Add to Cart

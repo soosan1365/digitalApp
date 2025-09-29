@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           " rounded-full bg-gradient-to-t text-gray-800 from-[#7aec93] to-[#b3e4f3] shadow-sm cursor-pointer hover:from-[#eeeae4] hover:to-[#a09e9a]",
         destructive:
-          "bg-gradient-to-b  from-[#95ecad] to-[#cad7df]  text-gray-700 font-semibold shadow-xs hover:bg-green/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "bg-gradient-to-t text-gray-50 from-[#735751] to-[#a78a7f] hover:from-[#F85A3E] hover:to-[#F85A3E] hover:text-white text-gray-700 font-semibold shadow-xs hover:bg-green/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:

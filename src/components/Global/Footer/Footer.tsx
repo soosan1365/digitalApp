@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className='w-full mt-4  flex justify-center items-center'>
+    <div className=' w-full mt-10  flex items-center'>
      
       <div className="w-[90%]  flex flex-col sm:flex-row  justify-around items-center gap-10 
         ">
@@ -15,17 +15,18 @@ const Footer = () => {
              <Link href="/">
           <Image className="w-[6vw] min-w-24" src={logo1}  alt="" />
         </Link>
-          <p className=" text-xl shoar text-gray-800 dark:md:text-white font-bold ">
+          <p className=" text-xl shoar text-black/80 dark:text-white font-bold ">
             Innovation in Your Hands
           </p>
         </div>
+        <div className='flex justify-between'>
         {/* center */}
         <div>
-          <p className="text-xl font-bold  text-gray-900 dark:text-white">
+          <p className="text-base font-bold  text-gray-900 dark:text-white">
             {" "}
             COMPANY
           </p>
-          <ul className=" flex flex-col gap-1 text-gray-900 dark:text-white">
+          <ul className="text-sm flex flex-col gap-1 text-gray-900 dark:text-white">
             <li>
               <a href="#" className="text-gray-800 dark:text-white hover:text-blue-500">
                 Home
@@ -50,13 +51,14 @@ const Footer = () => {
         </div>
         {/* right */}
         <div className='ml-16'>
-          <p className="text-xl font-bold  text-gray-900 dark:text-white">
+          <p className="text-base font-bold  text-gray-900 dark:text-white">
             GET IN TOUCH
           </p>
-          <ul className="flex flex-col gap-1 text-gray-800 dark:text-white">
+          <ul className="flex flex-col gap-1 text-gray-800 dark:text-white text-sm">
             <li>09162003147</li>
             <li>soosan.adh@gmail.com</li>
           </ul>
+        </div>
         </div>
       </div>
       </div>
