@@ -25,7 +25,6 @@ export default function RootLayout({
       <body className={`${font.className} antialiased `}>
           <ShoppingCartProvider>
         <Provider>
-        
           <Navbar/>
           {children}
           {/* <Footer/> */}

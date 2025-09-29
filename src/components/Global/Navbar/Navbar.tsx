@@ -53,9 +53,11 @@ const {cartTotalQty}=useShoppingCartContext()
         </div>
         {/* left */}
         <div className="flex items-center justify-center space-x-4    ">
-          <Button variant="link" size="sm">
-            sign in
+          <Link href="/login">
+          <Button variant="link" size="sm" >
+            signIn
           </Button>
+          </Link>
           {/* dark&light menu */}
           <ThemeToggler />
           {/* cart icon */}
