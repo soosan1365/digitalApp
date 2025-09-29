@@ -10,7 +10,7 @@ import Link from 'next/link'
     return (
         <Container>
             <div className=''>
-            <div className='mt-28'>
+            <div className='mt-20'>
                 <Title title="َstore" />
             </div>
             <div className='max-w-[85%]  sm:max-w-full mx-auto px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 gap-7  '>

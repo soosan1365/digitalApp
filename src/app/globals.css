@@ -123,7 +123,7 @@
 
 
 .dark {
-  background-image: url('/assets/bg.jpg'); /* مسیر عکس را با توجه به public تنظیم کن */
+  background-image: url('/assets/bg3.jpg'); /* مسیر عکس را با توجه به public تنظیم کن */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;}
