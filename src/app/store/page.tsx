@@ -34,8 +34,6 @@ async function Store({ searchParams }: IStoreProps) {
           <Search />
         </div>
         <Category />
-        
-
         <div className=" w-fit mx-auto px-3  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-5  ">
           {data.data?.map((item, i) => (
             <Link key={i} href={`/store/${item.id}`}>
