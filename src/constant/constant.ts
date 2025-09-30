@@ -44,22 +44,22 @@ export const Navlinks:NavItem[] = [
 ];
  export const category:CategoryItem[]=[
   {id:1,
-    title:"phone"
+    title:"Phone"
   },
    {id:2,
-    title:"laptop"
+    title:"Laptop"
   },
    {id:3,
-    title:"macbook"
+    title:"Macbook"
   },
    {id:4,
     title:"Earphones"
   },
    {id:5,
-    title:"earphone"
+    title:"Camera"
   },
   {id:6,
-    title:"watch"
+    title:"Watch"
   }
  
  ]

@@ -6,7 +6,8 @@
       "description": "Noise-cancellation, 40-hour battery",
       "rating": 4.5,
       "price": 299.99,
-      "imgSrc": "/assets/apple_earphone_image.png"
+      "imgSrc": "/assets/apple_earphone_image.png",
+      "category":""
     },
     {
       "id": "2",
@@ -14,7 +15,8 @@
       "description": "Noise Cancellation, 24-hour battery",
       "rating": 4.5,
       "price": 329.99,
-      "imgSrc": "/assets/bose_headphone_image.png"
+      "imgSrc": "/assets/bose_headphone_image.png",
+      "category":"Headphone"
     },
     {
       "id": "3",
@@ -22,7 +24,8 @@
       "description": "Fitness Tracking, AMOLED Display",
       "rating": 4.5,
       "price": 799.99,
-      "imgSrc": "/assets/samsung_s23phone_image.png"
+      "imgSrc": "/assets/samsung_s23phone_image.png",
+      "category":"Phone"
     },
     {
       "id": "4",
@@ -30,7 +33,8 @@
       "description": "Noise Cancellation, 24-hour battery",
       "rating": 4.5,
       "price": 349.99,
-      "imgSrc": "/assets/venu_watch_image.png"
+      "imgSrc": "/assets/venu_watch_image.png",
+      "category":"Watch"
     },
     {
       "id": "5",
@@ -38,7 +42,8 @@
       "description": "Ultra-HD, 825GB SSD, Ray Graphics",
       "rating": 4.5,
       "price": 499.99,
-      "imgSrc": "/assets/apple_earphone_image.png"
+      "imgSrc": "/assets/apple_earphone_image.png",
+      "category":"Earphone"
     },
     {
       "id": "6",
@@ -46,7 +51,8 @@
       "description": "M2 Pro Chip, 16GB RAM, 512GB SSD",
       "rating": 4.5,
       "price": 499.99,
-      "imgSrc": "/assets/macbook_image.png"
+      "imgSrc": "/assets/macbook_image.png",
+      "category":"Mackbook"
     },
     {
       "id": "7",
@@ -54,7 +60,8 @@
       "description": "Noise-Cancellation, Hi-Res Audio",
       "rating": 4.5,
       "price": 299.99,
-      "imgSrc": "/assets/sony_airbuds_image.png"
+      "imgSrc": "/assets/sony_airbuds_image.png",
+      "category":"Airbuds"
     },
     {
       "id": "8",
@@ -62,7 +69,8 @@
       "description": "4K Ultra HD, Realistic, Built-In Speaker",
       "rating": 4.5,
       "price": 499.99,
-      "imgSrc": "/assets/projector_image.png"
+      "imgSrc": "/assets/projector_image.png",
+      "category":"projector"
     },
     {
       "id": "9",
@@ -70,7 +78,8 @@
       "description": "Intel Core i9, RTX 4070, 16GB, 1TB",
       "rating": 4.5,
       "price": 999.99,
-      "imgSrc": "/assets/asus_laptop_image.png"
+      "imgSrc": "/assets/asus_laptop_image.png",
+      "category":"Laptop"
     },
     {
       "id": "10",
@@ -78,7 +87,8 @@
       "description": "Noise-cancellation, 40-hour battery",
       "rating": 4.5,
       "price": 299.99,
-      "imgSrc": "/assets/apple_earphone_image.png"
+      "imgSrc": "/assets/apple_earphone_image.png",
+      "category":"Earphone"
     },
     {
       "id": "11",
@@ -86,7 +96,8 @@
       "description": "Noise Cancellation, 24-hour battery",
       "rating": 4.5,
       "price": 329.99,
-      "imgSrc": "/assets/bose_headphone_image.png"
+      "imgSrc": "/assets/bose_headphone_image.png",
+      "category":"Headphone"
     },
     {
       "id": "12",
@@ -94,7 +105,8 @@
       "description": "Fitness Tracking, AMOLED Display",
       "rating": 4.5,
       "price": 799.99,
-      "imgSrc": "/assets/samsung_s23phone_image.png"
+      "imgSrc": "/assets/samsung_s23phone_image.png",
+      "category":"Phone"
     },
     {
       "id": "13",
@@ -102,7 +114,8 @@
       "description": "Noise Cancellation, 24-hour battery",
       "rating": 4.5,
       "price": 349.99,
-      "imgSrc": "/assets/venu_watch_image.png"
+      "imgSrc": "/assets/venu_watch_image.png",
+      "category":"Watch"
     },
     {
       "id": "14",
@@ -110,7 +123,8 @@
       "description": "Ultra-HD, 825GB SSD, Ray Graphics",
       "rating": 4.5,
       "price": 499.99,
-      "imgSrc": "/assets/apple_earphone_image.png"
+      "imgSrc": "/assets/apple_earphone_image.png",
+      "category":"Earphone"
     },
     {
       "id": "15",
@@ -118,7 +132,8 @@
       "description": "45MP Sensor, 8K Video Recording",
       "rating": 4.5,
       "price": 899.99,
-      "imgSrc": "/assets/cannon_camera_image.png"
+      "imgSrc": "/assets/cannon_camera_image.png",
+      "category":"camera"
     },
     {
       "id": "16",
@@ -126,7 +141,8 @@
       "description": "M2 Pro Chip, 16GB RAM, 512GB SSD",
       "rating": 4.5,
       "price": 499.99,
-      "imgSrc": "/assets/macbook_image.png"
+      "imgSrc": "/assets/macbook_image.png",
+      "category":"Mackbook"
     },
     {
       "id": "17",
@@ -134,7 +150,8 @@
       "description": "Noise-Cancellation, Hi-Res Audio",
       "rating": 4.5,
       "price": 299.99,
-      "imgSrc": "/assets/sony_airbuds_image.png"
+      "imgSrc": "/assets/sony_airbuds_image.png",
+      "category":"Airbuds"
     },
     {
       "id": "18",
@@ -142,14 +159,16 @@
       "description": "Intel Core i9, RTX 4070, 16GB, 1TB",
       "rating": 4.5,
       "price": 999.99,
-      "imgSrc": "/assets/asus_laptop_image.png"
+      "imgSrc": "/assets/asus_laptop_image.png",
+      "category":"Laptop"
     },
     {
       "id": 421,
       "name": "PlayStation 5",
       "description": "Ultra-HD, 825GB SSD, Ray Graphics",
       "price": "326",
-      "imgSrc": "/assets/apple_earphone_image.png"
+      "imgSrc": "/assets/apple_earphone_image.png",
+      "category":"Earphone"
     }
   ],
   "bestSeller": [

@@ -10,7 +10,7 @@ import Link from 'next/link'
         const data =await result.json() as PRODUCT[]
     return (
        <Container>
-                 <div className='mt-28 '>
+                 <div className=' '>
                      <Title title="َThe best sellers" />
                  </div>
                  <div className=' mx-auto px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 gap-7 '>

@@ -26,7 +26,7 @@ export interface ProductListType {
 const StoreCard = ({ id, name, rating, price, imgSrc }: PRODUCT) => {
   return (
     <div
-      className="relative flex flex-col justify-between items-center shadow-[#ece7e7] shadow-lg
+      className="relative px-5 flex flex-col justify-between items-center shadow-[#ece7e7] shadow-lg
      dark:shadow-white/35 bg-gray-50 dark:bg-gradient-to-b text-gray-800 from-[#cff7d8]
       to-[#f4f7f8] rounded-2xl border-[0.5px] border-[#e2dada]"
     >
@@ -36,12 +36,12 @@ const StoreCard = ({ id, name, rating, price, imgSrc }: PRODUCT) => {
           alt={name}
           width={250}
           height={250}
-          className="w-full h-[200px] object-cover"
+          className="w-full object-cover"
         />
         <h1 className="hover:text-green-900  text-sm sm:text-base font-bold">
           {name}
         </h1>
-        <div className="flex items-center justify-between w-full py-5">
+        <div className=" flex flex-col sm:flex-row items-center justify-between w-full py-5">
           <p className=" text-sm  font-bold">{price}</p>
           {/* <AddToCart id={id}/> */}
           <Button variant="link" size="sm" className="text-sm">
