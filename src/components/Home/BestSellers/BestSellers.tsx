@@ -6,7 +6,8 @@ import Link from 'next/link'
 
 
  async function BestSellers () {
-        const result =await fetch("http://localhost:3004/bestSeller")
+    const API_URL=process.env.NEXT_PUBLIC_API_URL ||"http://localhost:3004"
+        const result =await fetch(`${API_URL}/bestSeller`)
         const data =await result.json() as PRODUCT[]
     return (
        <Container>
