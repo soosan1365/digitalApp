@@ -29,8 +29,7 @@ const CartItem = ({id,qty}:cartItemProps) => {
           className="col-span-2    flex items-center
     w-full justify-center rounded-3xl"
         >
-          <Image src={data.imgSrc} width={100} height={100} alt="++
-          "/>
+          <Image src={data.imgSrc} width={100} height={100} alt={data.name}/>
         </div>
         {/* right */}
         <div
