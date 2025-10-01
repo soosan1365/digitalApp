@@ -38,7 +38,7 @@ return totalQty +item.qty
 
   const handleIncrease = (id:number) => {
     setCartItems((currentItems) => {
-      let isNotProductExist = currentItems.find((item) => item.id === id)==null;
+      const isNotProductExist = currentItems.find((item) => item.id === id)==null;
       if (isNotProductExist) {
         return [...currentItems, { id: id,qty: 1 }];
       } else {
@@ -53,7 +53,7 @@ return totalQty +item.qty
 
 const handleDecrease=(id:number)=>{
   setCartItems(currentItems =>{
-    let islastOne=currentItems.find(item =>item.id===id)?.qty==1
+    const islastOne=currentItems.find(item =>item.id===id)?.qty==1
     if(islastOne){
       return currentItems.filter(item=>item.id !==id)
     }

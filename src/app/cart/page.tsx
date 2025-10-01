@@ -32,8 +32,8 @@ function Cart() {
     })
   }, [])
 
-  let totalPrice = cartItems.reduce((total, item) => {
-    let selectProduct = data.find((product) => product.id == item.id)
+  const  totalPrice = cartItems.reduce((total, item) => {
+    const  selectProduct = data.find((product) => product.id == item.id)
     return total + (selectProduct?.price || 0) * item.qty
   }, 0)
 
@@ -44,8 +44,8 @@ function Cart() {
       (result) => {
         const data = result.data as  discountDataType[];
         console.log(data)
-        let discountPrice =totalPrice * data[0].precentage /100
-        let finalPrice=totalPrice - discountPrice
+        const  discountPrice =totalPrice * data[0].precentage /100
+        const  finalPrice=totalPrice - discountPrice
         setFinalPrice(finalPrice)
         setDiscountPrice(discountPrice)
       },
