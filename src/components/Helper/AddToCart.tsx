@@ -7,7 +7,7 @@ interface AddToCartProps{
   id:string
 }
 function AddToCart({id}:AddToCartProps) {
-    const {cartItems,handleIncrease,getProductqty,handleDecrease,handleRemove}=useShoppingCartContext()
+    const {handleIncrease,getProductqty,handleDecrease,handleRemove}=useShoppingCartContext()
   
   return (
     <div className=' flex justify-center items-center gap-5 dark:text-black'>

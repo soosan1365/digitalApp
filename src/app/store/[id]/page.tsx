@@ -6,7 +6,7 @@ import { PRODUCT } from '@/components/Helper/StoreCard'
   import AddToCart from '@/components/Helper/AddToCart'
 interface IPoductProps{
   params:Promise<{id:string}>
-  searchParams:Promise<{}>
+ 
 }
 
 async  function Product( {params}:IPoductProps){
