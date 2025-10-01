@@ -20,7 +20,7 @@ const CartItem = ({id,qty}:cartItemProps) => {
         setData(data)
       }
     )
-  },[])
+  },[API_URL,id])
 
   return (
     <div className=" mx-auto w-[95%] grid grid-cols-9 mt-5  bg-blue-50 shadow-2xs shadow-amber-50  dark:bg-black/25 rounded-3xl justify-center ">

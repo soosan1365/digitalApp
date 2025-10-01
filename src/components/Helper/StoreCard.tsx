@@ -3,7 +3,6 @@ import React from 'react'
 import star_icon from '@/../public/assets/star_icon.svg'
 import star_dull_icon from '@/../public/assets/star_dull_icon.svg'
 import { Button } from '@/components/ui'
-import AddToCart from './AddToCart'
 
 export interface PRODUCT {
   id: number
@@ -23,7 +22,7 @@ export interface ProductListType {
   data: PRODUCT[]
 }
 
-const StoreCard = ({ id, name, rating, price, imgSrc }: PRODUCT) => {
+const StoreCard = ({ name, rating, price, imgSrc }: PRODUCT) => {
   return (
     <div
       className="relative px-5 flex flex-col justify-between items-center shadow-[#ece7e7] shadow-lg

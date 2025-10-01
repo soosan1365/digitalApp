@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Title from './Title'
 import { category } from '@/constant/constant'
 import Container from './Container'
 import { useRouter, useSearchParams } from 'next/navigation'

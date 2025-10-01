@@ -7,7 +7,6 @@ import Pagination from '@/components/Helper/Pagination'
 import Search from '@/components/Helper/Search'
 import Category from '@/components/Helper/Category'
 interface IStoreProps {
-  params: Promise<{}>
   searchParams: Promise<{
     page: string
     per_page: string
