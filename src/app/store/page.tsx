@@ -20,7 +20,7 @@ async function Store({ searchParams }: IStoreProps) {
   const per_page = (await searchParams).per_page ?? '8'
   const name = (await searchParams).name ?? ''
   const category = (await searchParams).category ?? ''
-    const API_URL=process.env.NEXT_PUBLIC_API_URL ||"http://localhost:3004"
+    const API_URL="http://localhost:3004"
 
   const result = await fetch(
     `${API_URL}/products?_page=${page}&_per_page=${per_page}&name=${name}&category=${category}`,

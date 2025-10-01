@@ -24,7 +24,7 @@ function Cart() {
     const [discountPrice, setDiscountPrice] = useState(0)
 
   useEffect(() => {
-        const API_URL=process.env.NEXT_PUBLIC_API_URL ||"http://localhost:3004"
+        const API_URL="http://localhost:3004"
 
     axios(`${API_URL}/products`).then((result) => {
       const { data } = result
@@ -38,7 +38,7 @@ function Cart() {
   }, 0)
 
   const handleSubmitDiscount = () => {
-        const API_URL=process.env.NEXT_PUBLIC_API_URL ||"http://localhost:3004"
+        const API_URL="http://localhost:3004"
 
     axios(`${API_URL}/discounts?code=${discountCode}`).then(
       (result) => {
