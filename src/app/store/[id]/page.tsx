@@ -11,8 +11,9 @@ interface IPoductProps{
 
 async  function Product( {params}:IPoductProps){
   const {id}=await params
-  
-    const result =await fetch(`http://localhost:3004/products/${id}`)
+      const API_URL=process.env.NEXT_PUBLIC_API_URL ||"http://localhost:3004"
+
+    const result =await fetch(`${API_URL}/products/${id}`)
       const data =await result.json() as PRODUCT
   return (
     <Container>

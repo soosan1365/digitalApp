@@ -22,6 +22,7 @@ function Admin() {
   }
   const handleCreateProduct = () => {
     axios({
+      
       method: 'post',
       url: 'http://localhost:3004/products',
       data: {

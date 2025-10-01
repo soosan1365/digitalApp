@@ -11,9 +11,10 @@ import axios from 'axios'
 const CartItem = ({id,qty}:cartItemProps) => {
 
   const [data,setData]=useState({} as PRODUCT)
-
+    const API_URL=process.env.NEXT_PUBLIC_API_URL ||"http://localhost:3004"
   useEffect(()=>{
-    axios(`http://localhost:3004/products/${id}`).then(
+
+    axios(`${API_URL}/products/${id}`).then(
       result=>{
         const{data}=result
         setData(data)
